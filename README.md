@@ -190,31 +190,6 @@ Weekly retraining uses a 12-race lookback by default to prioritise current-seaso
 
 ---
 
-## Project Structure
-
-```
-grid-edge/
-├── app.py                  # Flask app + full HTML/JS frontend
-├── run_pipeline.py         # End-to-end pipeline runner
-├── weekly_retrain.py       # Weekly incremental retrain system
-├── validate_weekly.py      # Walk-forward backtester
-├── schedule_config.py      # Task Scheduler / daemon setup
-├── requirements.txt
-├── Dockerfile
-├── docker-compose.yml
-├── src/
-│   ├── ingest.py           # FastF1 data ingestion + price merge
-│   ├── features.py         # Feature engineering
-│   ├── model.py            # LightGBM training
-│   └── optimizer.py        # PuLP ILP optimizer
-├── data/
-│   ├── prices.csv          # Driver prices for current season
-│   ├── race_data.csv       # Raw race results cache
-│   ├── merged_data.csv     # Race + price merged dataset
-│   └── features.csv        # Engineered feature matrix
-└── models/
-    └── lgbm_model.pkl      # Trained model
-```
 
 ---
 
