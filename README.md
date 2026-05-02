@@ -87,8 +87,8 @@ The pipeline is fully orchestrated by `run_pipeline.py` and can retrain automati
 ### 1. Clone & install
 
 ```bash
-git clone https://github.com/<your-username>/grid-edge.git
-cd grid-edge
+git clone https://github.com/guninsharma/grid-edge-f1-optimiser
+cd grid-edge-f1-optimiser
 pip install -r requirements.txt
 ```
 
